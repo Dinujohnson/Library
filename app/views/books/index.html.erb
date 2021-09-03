@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<%= image_tag "libpic1.jfif", width:2000 , height: 400; %>
 <h1>Books</h1>
-
+<body style="background-color:yellowgreen;">
+</body>
 <table>
   <thead>
     <tr>
@@ -21,6 +22,7 @@
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'ASSIGN TO STUDENT' %></td>
       </tr>
     <% end %>
   </tbody>

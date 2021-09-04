@@ -9,7 +9,11 @@
       <th>Name</th>
       <th>Author</th>
       <th>Description</th>
-      <th colspan="3"></th>
+      <th></th>
+       <th></th>
+        <th></th>
+         <th>Assign</th>
+      <th colspan="7"></th>
     </tr>
   </thead>
 
@@ -22,7 +26,7 @@
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to 'ASSIGN TO STUDENT' %></td>
+        <td><%= link_to 'ASSIGN TO STUDENT' , students_path%></td>
       </tr>
     <% end %>
   </tbody>
